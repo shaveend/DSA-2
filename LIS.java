@@ -3,9 +3,9 @@ import java.util.Scanner;
 import java.util.Random;
 public class LIS{
 	static void lis (int[] arr){
-		int[] seq= new int[arr.length];
-		int[] order = new int[arr.length];
-		int[] temp =new int[arr.length];
+		int[] seq= new int[arr.length];		//Used to find the maximum number of elements in the LIS
+		int[] order = new int[arr.length];	//Used to backtrack the LIS
+		int[] temp =new int[arr.length];	//Used to temporary store the LIS in case of multiple answers
 		
 		Arrays.fill(seq,1);
 		Arrays.fill(order,-1);
