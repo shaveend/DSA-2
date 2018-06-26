@@ -19,14 +19,14 @@ public class LIS{
 			
 			for(int j=0;j<i;j++){
 				
-				if((arr[i]> arr[j]) && (seq[i]<=seq[j])){
+				if((arr[i]> arr[j]) && (seq[i]<=seq[j])){			
 					seq[i]=seq[j]+1;
 					
-					if((max==seq[i]) && (arr[i]<arr[max_index])){
+					if((max==seq[i]) && (arr[i]<arr[max_index])){	//LIS with a greater potential found
 						max_index=i;
 					}
 					
-					if(max<seq[i]){
+					if(max<seq[i]){									// New LIS found
 						max=seq[i];
 						max_index=i;
 					}
